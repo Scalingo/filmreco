@@ -11,12 +11,13 @@ git push scalingo master
 
 And that's it!
 
+## Deploy in One Click
+
+[![Deploy to Scalingo](https://cdn.scalingo.com/deploy/button.svg)](https://my.osc-fr1.scalingo.com/deploy?source=https://github.com/Scalingo/filmreco)
+
 ## Running Locally
 
-Install uv (if not already installed):
-
 ```shell
-cp .env.example .env
-uv sync
-uv run uvicorn main:app --host 0.0.0.0 --port 8080
+docker compose up --build
 ```
+The app listens by default on the port 8080

@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-echo ">>> Cleaning up build caches..."
+echo ">>> Cleaning up uv and other build caches..."
 
-rm -rf $HOME/.cache/pip $HOME/.cache/pipenv || true
+rm -rf $HOME/.cache/uv || true
 
 rm -rf $HOME/.cache/huggingface $HOME/.cache/torch || true
 
